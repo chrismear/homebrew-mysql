@@ -128,6 +128,9 @@ class MysqlAT57 < Formula
 
   def caveats
     s = <<~EOS
+      MySQL 5.7 is unsupported, and has been disabled in homebrew-core. This software
+      will not receive security updates. Please only use it if you understand the risks.
+
       We've installed your MySQL database without a root password. To secure it run:
           mysql_secure_installation
 
